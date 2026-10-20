@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouhamed Diouf | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7ff;
+      color: #142443;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 2px 12px #14244310;
+    }
+
+    header h2 {
+      color: #5145f5;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #142443;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 80px 8%;
+      background: linear-gradient(120deg, #e1edff, #eeebff);
+      text-align: center;
+    }
+
+    .hero .hello {
+      color: #5145f5;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      margin: 12px 0;
+    }
+
+    .hero h1 span {
+      color: #5145f5;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #526482;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #5145f5;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    section {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: #5145f5;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: left;
+      box-shadow: 0 5px 20px #1424430c;
+    }
+
+    .card h3 {
+      color: #5145f5;
+      margin-bottom: 8px;
+    }
+
+    #contact {
+      background: white;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #142443;
+      color: white;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>&lt;/&gt; Mon Portfolio</h2>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="accueil">
+      <div class="hello">👋 Bonjour et bienvenue !</div>
+      <h1>Je suis <span>Mouhamed Diouf</span></h1>
+      <h2>Apprenti développeur web</h2>
+      <p>
+        Je découvre le monde du développement web.
+        Je construis mes premiers projets et j'apprends
+        chaque jour à créer de beaux sites Internet.
+      </p>
+      <a class="button" href="#competences">Découvrir mes compétences</a>
+      <a class="button" href="#contact">Me contacter</a>
+    </div>
+
+    <section id="apropos">
+      <div class="subtitle">À propos</div>
+      <h2>Mon parcours</h2>
+      <p>
+        Je suis débutant en développement web et je progresse
+        étape par étape. Ce portfolio présente mon apprentissage
+        et les projets que je réaliserai.
+      </p>
+    </section>
+
+    <section id="competences">
+      <div class="subtitle">Mes compétences</div>
+      <h2>Ce que j'apprends</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>🌐 HTML</h3>
+          <p>Pour structurer le contenu de mes pages web.</p>
+        </div>
+        <div class="card">
+          <h3>🎨 CSS</h3>
+          <p>Pour créer des pages élégantes et agréables.</p>
+        </div>
+        <div class="card">
+          <h3>⚡ JavaScript</h3>
+          <p>Pour rendre mes sites interactifs.</p>
+        </div>
+        <div class="card">
+          <h3>🐙 GitHub</h3>
+          <p>Pour sauvegarder mes projets et les publier.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="subtitle">Contact</div>
+      <h2>Restons en contact</h2>
+      <p>Tu peux découvrir mes projets sur mon profil GitHub.</p>
+      <a class="button"
+         href="https://github.com/mhddf415"
+         target="_blank"
+         rel="noopener noreferrer">Mon profil GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Mouhamed Diouf — Mon portfolio personnel</p>
+    <p>Apprendre aujourd'hui, construire demain.</p>
+  </footer>
+
+</body>
+</html>
